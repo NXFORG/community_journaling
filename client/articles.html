@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreetHub - Articles</title>    
+    <title>StreetHub - Articles</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cirrus-ui@0.6.0/dist/cirrus.min.css">
     <link rel="icon" href="assets/updated logo/logo_small_icon_only_inverted.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,31 +16,36 @@
 </head>
 
 <body class="bg-purple-200 mt-16">
-    <header>
-        <nav>        
-           <a href="index.html"><img id="navLogo" src="./assets/updated logo/logo_small.png"></a>
-            <button id="newPostButton" href='#newPost' type="button">New post</button>
-            <div class = "postModal" id="newPost">
+    <nav>        
+        <a href="index.html"><img id="navLogo" src="./assets/updated logo/logo_small.png"></a>
+        <button id="newPostButton" href='#newPost' type="button">New post</button>
+        <div class = "postModal" id="newPost">
                 <div class = "modalContent">
                     <header class="modalHeader">
                         <span id = "closePostBtn">&times;</span>
-                        <h4>Write your post below</h4>
+                        <h4 class="u-center">Write your post below</h4>
                     </header>      
-                    <body class="modalBody">                            
-                        <form method="POST"  id='postFooter'>
-                            <textarea name="titleInput" id="titleInput" rows="2" required maxlength="100" placeholder="Enter the title of your article here"></textarea>
-                            <textarea name="postInputBox" id="postInputBox" rows="15" autofocus required maxlength="1000" placeholder="Write your post here, 1000 character limit"></textarea>
-                            <!-- <button disabled id='gifBtn' class='ourBtn'>Add a Gif</button> -->
-                            <input id='postBtn' type="submit" value="submit" formmethod="POST">
-                        </form>                        
-                    </body>           
-                </div>
+                <section class="modalBody">                            
+                    <form method="POST"  id='postFooter'>
+                        <textarea name="titleInput" id="titleInput" rows="2" required maxlength="100" placeholder="Enter the title of your article here"></textarea>
+                        <textarea name="postInputBox" id="postInputBox" rows="15" autofocus required maxlength="2000" placeholder="Write your post here, 2000 character limit"></textarea> 
+                        <input id='postBtn' type="submit" value="submit" formmethod="POST">
+                    </form>                        
+                </secion>   
+            </div>
         </nav>
-    </header> 
     <section>
-        <h2 id="title">Posts</h2>
+        <h1 id="title">Your Feed</h1>
     </section>
-    <main id = "article-body">     
+    <main>
+        <section id="article-body1">     
+        </section> 
+        <section id="article-body2">     
+        </section> 
+        <section id="article-body3">     
+        </section> 
+    </main>
+    <section>
         <div class="ourModal" id='viewModal'>
             <div class="modalContent">
                 <header class='modalHeader'>
@@ -65,10 +70,8 @@
                 </footer> 
             </div>
         </div>
-    
-    </main> 
-
-    <footer class="footer bg-gray-000 font-alt text-purple-300" id="CoCFooter">
+    </section>
+    <footer class="footer bg-gray-000 font-alt text-purple-300" id="pageFooter">
         <h6 class="footer_title">2021 StreetHub - RCGroup</h6>
             <div class="content">
                 <div class="divider"></div>
@@ -77,20 +80,21 @@
                    
                     <div class="col-4">
                         <ul class="no-bullets">
-                            <a href="index.html">
+                            <a href="index.html" class="ourFooterBtn" id="homepageButton">
                                 <li class="footer__list-item">About</li>
                             </a>
-                            <a href="conduct.html">
+                            <a href="conduct.html" class="ourFooterBtn">
                                 <li class="footer__list-item">Code of Conduct</li>
                             </a>
-                            <a href="articles.html">
-                                <li class="footer__list-item">Posts</li>
+
+                            <a href="articles.html" class="ourFooterBtn">
+                                <li class="footer__list-item">Articles</li>
+
                             </a>
                             <ul>
                             </ul>
                         </ul>
                     </div>
-                   
                 </div>
             </div>
     </footer>
