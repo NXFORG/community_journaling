@@ -1,10 +1,24 @@
-#article-body {
-    padding: 10px 20px;
+/* #article-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-} 
+} */
+main {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+#article-body1 {
+    width: 33%;
+    display: inline;
+}
+#article-body2 {
+    width: 33%;
+    display: inline;
+}
+#article-body3 {
+    width: 33%;
+    display: inline;
+}
 
 #title {
     text-align: center;
@@ -17,22 +31,13 @@
     background-color: #CBB2F6;
     color:black;
     padding: 10px;
-    border: 5px solid black;
+    margin: 20px 10px 10px 10px;
+
 }
 
 .card header {
     text-align: center;
     margin: 10px;
-}
-
-.card p {
-    margin: 10px;
-}
-
-.card footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0 0 0;
 }
 
 .ourBtn {
@@ -77,9 +82,8 @@
 }
 
 #titleInput {
-    grid-column: 1 / 4;
-    grid-row: 1;    
-    height: 20px;
+    grid-column: 1 / 4;  
+    min-height: 1rem;
 }
 
 #postInputBox {
@@ -96,7 +100,7 @@
     font-size: large;
     font-weight: bold;
     height: 75px;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 6;
 }
 
@@ -198,12 +202,21 @@
     margin-left: 10px;
 }
 
-#formBtnContainer > button > img {
+.formBtnContainer > button{
+    padding: 8px;
+}
+
+.formBtnContainer > button > img {
     margin-left: 10px;
 }
 
 .articleContent {
     font-family: 'Quicksand', sans-serif;
+}
+
+.commentBtn {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .commentBtn:hover{

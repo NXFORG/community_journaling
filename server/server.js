@@ -31,7 +31,7 @@ const articles = [
             {comment: '2021/10/6 - 15:26: Oh no, hope you find Mike!', gifs: []},
         ], 
         emojis: {like: 2, heart: 7, fire: 0}
-    }
+    },
 ]
 
 app.use(cors());
