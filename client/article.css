@@ -228,6 +228,12 @@ main {
     cursor: pointer;
 }
 
+dl {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 1050px) {
     #article-body {
         grid-template-columns: 1fr;
